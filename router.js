@@ -1,25 +1,18 @@
-function routing(page) {
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', page, true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      document.getElementById('content').innerHTML = xhr.responseText;
-    }
-  };
-  xhr.send();
-}
+function showContent(page) {
+  var pages = document.querySelectorAll('.page-content');
+  pages.forEach(function (pageContent) {
+    pageContent.classList.remove('active');
+  });
 
-function loadHomePage() {
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'pages/home.html', true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      document.getElementById('content').innerHTML = xhr.responseText;
-    }
-  };
-  xhr.send();
+  document.getElementById('content-' + page).classList.add('active');
+
+  if (page === 'home') {
+    document.querySelector('header').style.display = 'none';
+  } else {
+    document.querySelector('header').style.display = 'block';
+  }
 }
 
 window.onload = function () {
-  loadHomePage();
+  showContent('home');
 };

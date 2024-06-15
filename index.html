@@ -4,9 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Term Project</title>
+    <style>
+      .page-content {
+        display: none;
+      }
+      .active {
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <div id="content"></div>
+    <header>
+      <button onclick="showContent('home')">HOME</button>
+      <button onclick="showContent('aboutme')">ABOUT ME</button>
+    </header>
+    <div id="content-home" class="page-content active">
+      <iframe src="pages/home.html"></iframe>
+      <button onclick="showContent('aboutme')">ABOUT ME</button>
+    </div>
+
+    <div id="content-aboutme" class="page-content">
+      <iframe src="pages/aboutme.html"></iframe>
+    </div>
 
     <script src="router.js"></script>
   </body>
