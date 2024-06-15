@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: 'Pretendard';
 }
 
 html,
@@ -75,4 +74,5 @@ button {
   border: 0 none;
   background: none;
   padding: 0;
+  cursor: pointer;
 }

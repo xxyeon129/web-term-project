@@ -1,5 +1,5 @@
-function showContent(page) {
-  var pages = document.querySelectorAll('.page-content');
+function routing(page) {
+  const pages = document.querySelectorAll('.page-content');
   pages.forEach(function (pageContent) {
     pageContent.classList.remove('active');
   });
@@ -14,5 +14,5 @@ function showContent(page) {
 }
 
 window.onload = function () {
-  showContent('home');
+  routing('home');
 };
