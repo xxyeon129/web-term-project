@@ -11,13 +11,13 @@
   </head>
   <body>
     <header>
-      <button onclick="routing('home')">HOME</button>
-      <button onclick="routing('aboutme')">ABOUT ME</button>
+      <button onclick="routing(PATH.HOME)">HOME</button>
+      <button onclick="routing(PATH.ABOUT_ME)">ABOUT ME</button>
     </header>
 
-    <div id="content-home" class="page-content active">
+    <div id="content-home" class="page-content show">
       <iframe src="pages/home.html"></iframe>
-      <button onclick="routing('aboutme')">ABOUT ME</button>
+      <button onclick="routing(PATH.ABOUT_ME)">ABOUT ME</button>
     </div>
 
     <div id="content-aboutme" class="page-content">
