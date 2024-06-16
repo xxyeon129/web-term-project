@@ -8,23 +8,34 @@
     <script defer src="router.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body style="margin: 0px">
     <header>
       <button onclick="routing(PATH.HOME)">HOME</button>
       <button onclick="routing(PATH.ABOUT_ME)">ABOUT ME</button>
+      <button onclick="routing(PATH.FASHION_HOME)">FASHION</button>
     </header>
 
     <main id="content-home" class="page-content show">
-      <iframe src="pages/home.html"></iframe>
       <button onclick="routing(PATH.ABOUT_ME)">ABOUT ME</button>
+      <button onclick="routing(PATH.FASHION_HOME)">FASHION</button>
+      <iframe src="pages/home.html"></iframe>
     </main>
 
     <main id="content-aboutme" class="page-content">
       <iframe src="pages/aboutme.html"></iframe>
     </main>
 
-    <main id="content-aboutme" class="page-content">
-      <iframe src="pages/aboutme.html"></iframe>
+    <main id="content-fashion-home" class="page-content">
+      <button onclick="routing(PATH.FASHION_TMB)">TMB</button>
+      <button onclick="routing(PATH.FASHION_GLOWNY)">GLOWNY</button>
+    </main>
+
+    <main id="content-fashion-tmb" class="page-content">
+      <iframe src="pages/fashion/fashion-tmb.html"></iframe>
+    </main>
+
+    <main id="content-fashion-glowny" class="page-content">
+      <iframe src="pages/fashion/fashion-glowny.html"></iframe>
     </main>
   </body>
 </html>
