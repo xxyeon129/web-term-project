@@ -25,7 +25,8 @@ aside,
 main,
 title,
 article,
-iframe {
+iframe,
+section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -34,6 +35,10 @@ iframe {
   vertical-align: baseline;
   text-decoration: none;
 }
+main {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
