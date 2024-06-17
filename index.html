@@ -7,12 +7,14 @@
 
     <script defer src="router.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="pages/fashion/fashion-home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet" />
   </head>
   <body style="margin: 0px">
     <header>
@@ -32,8 +34,34 @@
     </main>
 
     <main id="content-fashion-home" class="page-content">
-      <button onclick="routing(PATH.FASHION_TMB)">TMB</button>
-      <button onclick="routing(PATH.FASHION_GLOWNY)">GLOWNY</button>
+      <section id="fashion-home-page">
+        <article>
+          <h1>
+            FAVORITE
+            <br />
+            FASHION BRAND
+          </h1>
+          <p>
+            제 취미 중 하나는 여러 패션을 구경하고 다양한 스타일을 시도해보는 것입니다.
+            <br />
+            브랜드에서 컬렉션을 출시하면 각기 다른 매력을 구경하는 데서 즐거움을 찾습니다.
+            <br />
+            세 가지 브랜드 말고도 여러 의류 브랜드를 즐겨 입지만, 가장 좋아하는 브랜드 세 가지를 소개합니다.
+          </p>
+          <figure>
+            <img src="pages/fashion/images/tmb/tmb-home-wishlist.png" />
+            <figcaption>
+              <div class="figcaption-brand-name">Treeming bird</div>
+              TMB Fur Gloves [White]
+            </figcaption>
+          </figure>
+        </article>
+        <nav>
+          <button id="fashion-tmb-button" onclick="routing(PATH.FASHION_TMB)">Treeming bird</button>
+          <button id="fashion-nike-button">Nike</button>
+          <button id="fashion-glowny-button" onclick="routing(PATH.FASHION_GLOWNY)">Glowny</button>
+        </nav>
+      </section>
     </main>
 
     <main id="content-fashion-tmb" class="page-content">
