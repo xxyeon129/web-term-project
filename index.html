@@ -18,9 +18,13 @@
   </head>
   <body style="margin: 0px">
     <header>
-      <button onclick="routing(PATH.HOME)">HOME</button>
-      <button onclick="routing(PATH.ABOUT_ME)">ABOUT ME</button>
-      <button onclick="routing(PATH.FASHION_HOME)">FASHION</button>
+      <div id="header">
+        <button id="header-home" onclick="routing(PATH.HOME)">HOME</button>
+        <div id="header-aboutme-fashion">
+          <button onclick="routing(PATH.ABOUT_ME)">ABOUT ME</button>
+          <button onclick="routing(PATH.FASHION_HOME)">FASHION</button>
+        </div>
+      </div>
     </header>
 
     <main id="content-home" class="page-content show">
