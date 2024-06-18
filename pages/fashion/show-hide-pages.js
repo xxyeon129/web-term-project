@@ -1,9 +1,7 @@
 const mainPage = document.querySelector('.main-page');
-const detailPage = document.querySelector('.detail-page');
-const detailImage = detailPage.querySelector('.detail-image');
-const detailTitle = detailPage.querySelector('.detail-title');
 
-function goDetailPage() {
+function goDetailPage(brandName, magazineNumber) {
+  const detailPage = document.querySelector(`.${brandName}-detail-page-${magazineNumber}`);
   mainPage.style.display = 'none';
   detailPage.style.display = 'block';
 
@@ -14,7 +12,8 @@ function goDetailPage() {
   });
 }
 
-function goMainPage() {
+function goMainPage(brandName, magazineNumber) {
+  const detailPage = document.querySelector(`.${brandName}-detail-page-${magazineNumber}`);
   mainPage.style.display = 'block';
   detailPage.style.display = 'none';
 
