@@ -46,6 +46,37 @@ p {
       margin-right: 0;
     }
   }
+
+  .induce-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: -2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    .induce-scroll-icon {
+      animation: scroll 2s ease-out 0s infinite;
+    }
+    .scroll-icon-1 {
+      margin-bottom: -1rem;
+    }
+    .scroll-icon-2 {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+@keyframes scroll {
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 }
 
 #about-me-page-article-bottom {
