@@ -7,6 +7,7 @@
 
     <script defer src="router.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="pages/home.css" />
     <link rel="stylesheet" href="pages/fashion/fashion-home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,9 +29,62 @@
     </header>
 
     <main id="content-home" class="page-content show">
-      <button onclick="routing(PATH.ABOUT_ME)">ABOUT ME</button>
-      <button onclick="routing(PATH.FASHION_HOME)">FASHION</button>
-      <h1>HOME</h1>
+      <section id="content-home-section">
+        <header id="content-home-title">
+          <h1>Web-Programming<br />Term Project</h1>
+          <span id="content-home-subtitle">2024년도 1학기 웹프로그래밍 Term Project 정승연</span>
+        </header>
+
+        <article id="content-home-router">
+          <div class="button-wrapper" id="home-about-me-button">
+            <p class="hide about-me-button-text">자기소개 페이지로 이동</p>
+            <button onclick="routing(PATH.ABOUT_ME)">
+              <img src="pages/aboutme/images/aboutme.jpg" alt="cat profile" />
+            </button>
+          </div>
+          <ul id="content-home-detail-router">
+            <li>
+              <div class="button-wrapper content-home-detail-router-button-wrapper">
+                <button onclick="routing(PATH.FASHION_TMB)">
+                  <img src="pages/fashion/images/tmb/home-tmb-button.jpg" alt="treemingbird cloth" />
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="button-wrapper content-home-detail-router-button-wrapper">
+                <button>
+                  <img src="pages/fashion/images/nike/home-nike-button.png" alt="nike shoes" />
+                </button>
+              </div>
+            </li>
+            <li>
+              <div class="button-wrapper content-home-detail-router-button-wrapper">
+                <button onclick="routing(PATH.FASHION_GLOWNY)">
+                  <img src="pages/fashion/images/glowny/home-glowny-button.jpg" alt="glowny pictorial" />
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="button-wrapper">
+            <button id="fashion-home-button" onclick="routing(PATH.FASHION_HOME)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
+                <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+              </svg>
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!-- background animation -->
+      <div class="light x1"></div>
+      <div class="light x2"></div>
+      <div class="light x3"></div>
+      <div class="light x4"></div>
+      <div class="light x5"></div>
+      <div class="light x6"></div>
+      <div class="light x7"></div>
+      <div class="light x8"></div>
+      <div class="light x9"></div>
     </main>
 
     <main id="content-aboutme" class="page-content">

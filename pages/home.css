@@ -1,0 +1,275 @@
+#content-home {
+  margin: 0;
+  padding: 5rem 7rem;
+  height: 100vh;
+  font-weight: 100;
+  /* background: linear-gradient(#f67280, #355c7d); */
+  background: linear-gradient(#d3d3d3, #000000);
+  overflow-y: hidden;
+  animation: fadeIn 1 1s ease-out;
+}
+
+.hide {
+  opacity: 0;
+}
+
+#content-home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#content-home-title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+
+  > h1 {
+    font-size: 5rem;
+    line-height: 120%;
+  }
+
+  #content-home-subtitle {
+    border: 1px solid;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    width: fit-content;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+  }
+}
+
+#content-home-router {
+  display: flex;
+  margin-top: 10rem;
+  align-items: end;
+  justify-content: right;
+  column-gap: 1.5rem;
+
+  #content-home-detail-router {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 100px;
+    padding: 1rem 0.5rem;
+  }
+
+  .button-wrapper {
+    margin: 0 0.5rem;
+    padding: 0 0.313rem;
+
+    > button {
+      background-color: rgba(255, 255, 255, 0.4);
+      margin: 0 auto;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+  .content-home-detail-router-button-wrapper {
+    margin: 0 0.2rem;
+
+    > button {
+      width: 110px;
+      height: 110px;
+    }
+  }
+}
+
+#home-about-me-button {
+  position: relative;
+
+  .about-me-button-text {
+    position: absolute;
+    top: 48%;
+    left: 1.7rem;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    color: white;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+#home-about-me-button:hover {
+  > button {
+    transition: 0.5s;
+    width: 320px;
+    border-radius: 100px;
+    padding-right: 10px;
+    justify-content: end;
+  }
+  .about-me-button-text {
+    transition: 1s;
+    opacity: 1;
+    z-index: 3;
+
+    display: block;
+  }
+}
+#fashion-home-button:hover {
+  transition: 0.5s;
+  background-color: white;
+  background-color: red;
+}
+
+/* background animation */
+.light {
+  position: absolute;
+  width: 0px;
+  background-color: white;
+  box-shadow: #e9f1f1 0px 0px 20px 2px;
+  opacity: 0;
+  top: 100vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+
+.x1 {
+  animation: floatUp 4s infinite linear;
+  transform: scale(1);
+}
+
+.x2 {
+  animation: floatUp 7s infinite linear;
+  transform: scale(1.6);
+  left: 15%;
+}
+
+.x3 {
+  animation: floatUp 2.5s infinite linear;
+  transform: scale(0.5);
+  left: -15%;
+}
+
+.x4 {
+  animation: floatUp 4.5s infinite linear;
+  transform: scale(1.2);
+  left: -34%;
+}
+
+.x5 {
+  animation: floatUp 8s infinite linear;
+  transform: scale(2.2);
+  left: -57%;
+}
+
+.x6 {
+  animation: floatUp 3s infinite linear;
+  transform: scale(0.8);
+  left: -81%;
+}
+
+.x7 {
+  animation: floatUp 5.3s infinite linear;
+  transform: scale(3.2);
+  left: 37%;
+}
+
+.x8 {
+  animation: floatUp 4.7s infinite linear;
+  transform: scale(1.7);
+  left: 62%;
+}
+
+.x9 {
+  animation: floatUp 4.1s infinite linear;
+  transform: scale(0.9);
+  left: 85%;
+}
+
+button:focus {
+  outline: none;
+}
+
+@keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    top: 0vh;
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: -100vh;
+    opacity: 0;
+  }
+}
+@keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    top: 0vh;
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: -100vh;
+    opacity: 0;
+  }
+}
+@keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    top: 0vh;
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: -100vh;
+    opacity: 0;
+  }
+}
+@keyframes floatUp {
+  0% {
+    top: 100vh;
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    top: 0vh;
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: -100vh;
+    opacity: 0;
+  }
+}
