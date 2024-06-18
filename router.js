@@ -7,6 +7,7 @@ const PATH = {
   ABOUT_ME: 'aboutme',
   FASHION_HOME: 'fashion-home',
   FASHION_TMB: 'fashion-tmb',
+  FASHION_NIKE: 'fashion-nike',
   FASHION_GLOWNY: 'fashion-glowny',
 };
 

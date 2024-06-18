@@ -52,7 +52,7 @@
             </li>
             <li>
               <div class="button-wrapper content-home-detail-router-button-wrapper">
-                <button>
+                <button onclick="routing(PATH.FASHION_NIKE)">
                   <img src="pages/fashion/images/nike/home-nike-button.png" alt="nike shoes" />
                 </button>
               </div>
@@ -116,7 +116,7 @@
         </article>
         <nav>
           <button id="fashion-tmb-button" onclick="routing(PATH.FASHION_TMB)">Treeming bird</button>
-          <button id="fashion-nike-button">Nike</button>
+          <button id="fashion-nike-button" onclick="routing(PATH.FASHION_NIKE)">Nike</button>
           <button id="fashion-glowny-button" onclick="routing(PATH.FASHION_GLOWNY)">Glowny</button>
         </nav>
       </section>
@@ -124,6 +124,10 @@
 
     <main id="content-fashion-tmb" class="page-content">
       <iframe src="pages/fashion/fashion-brand-tmb.html"></iframe>
+    </main>
+
+    <main id="content-fashion-nike" class="page-content">
+      <iframe src="pages/fashion/fashion-brand-nike.html"></iframe>
     </main>
 
     <main id="content-fashion-glowny" class="page-content">

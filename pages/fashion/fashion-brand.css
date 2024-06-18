@@ -38,17 +38,23 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url(images/tmb/tmb-background1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: fade 8.5s infinite;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.slider-tmb {
+  background-image: url(images/tmb/tmb-background1.png);
+  animation: fade-tmb 8.5s infinite;
+}
+.slider-nike {
+  background-image: url(images/nike/nike-background1.png);
+  animation: fade-nike 8.5s infinite;
+}
 
-@keyframes fade {
+@keyframes fade-tmb {
   0% {
     background-image: url(images/tmb/tmb-background1.png);
   }
@@ -62,6 +68,20 @@
     background-image: url(images/tmb/tmb-background1.png);
   }
 }
+@keyframes fade-nike {
+  0% {
+    background-image: url(images/nike/nike-background1.png);
+  }
+  33.33% {
+    background-image: url(images/nike/nike-background2.png);
+  }
+  66.66% {
+    background-image: url(images/nike/nike-background3.png);
+  }
+  100% {
+    background-image: url(images/nike/nike-background1.png);
+  }
+}
 
 .logo {
   font-weight: 400;
@@ -71,6 +91,12 @@
 .logo-tmb {
   font-family: 'Baskervville', serif;
   letter-spacing: 1em;
+}
+.logo-nike {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 5rem;
 }
 
 .fashion-main-article {
@@ -147,12 +173,6 @@
   }
 
   .fashion-magazine-list-2 {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.5) 35%, rgba(204, 204, 204, 0.6) 100%),
-      url(images/tmb/tmb-magazine-2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
     color: white;
     text-align: center;
     display: flex;
@@ -173,6 +193,20 @@
       padding: 10px 20px;
       border-radius: 50px;
     }
+  }
+  .fashion-magazine-list-2-tmb {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.5) 35%, rgba(204, 204, 204, 0.6) 100%),
+      url(images/tmb/tmb-magazine-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .fashion-magazine-list-2-nike {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.5) 35%, rgba(204, 204, 204, 0.6) 100%),
+      url(images/nike/nike-magazine-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .fashion-magazine-list-3 {
