@@ -11,6 +11,11 @@ const PATH = {
   FASHION_GLOWNY: 'fashion-glowny',
 };
 
+const mainPage = document.querySelector('.main-page');
+const detailPage = document.querySelector('.detail-page');
+const detailImage = detailPage.querySelector('.detail-image');
+const detailTitle = detailPage.querySelector('.detail-title');
+
 function routing(page) {
   const pages = document.querySelectorAll('.page-content');
 
@@ -27,9 +32,21 @@ function routing(page) {
     document.querySelector(TAG_HEADER).style.display = 'none';
   } else {
     document.querySelector(TAG_HEADER).style.display = 'block';
+    goMainPage();
   }
 }
 
 window.onload = function () {
   routing(PATH.HOME);
 };
+
+function goMainPage() {
+  detailPage.style.display = 'none';
+  mainPage.style.display = 'block';
+
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
+}
