@@ -54,6 +54,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     text-align: center;
+    color: rgb(0, 0, 0, 0.7);
     .induce-scroll-icon {
       animation: scroll 2s ease-out 0s infinite;
     }
