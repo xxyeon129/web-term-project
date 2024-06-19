@@ -1,0 +1,21 @@
+.brand-name-nike {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.nike-detail-page-1 {
+  .background-image-wrapper-nike {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(223, 223, 223, 0.5) 50%,
+        rgba(255, 255, 255, 1) 100%
+      ),
+      url(../images/nike/nike-magazine-background-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

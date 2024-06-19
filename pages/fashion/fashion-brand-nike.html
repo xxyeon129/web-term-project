@@ -6,19 +6,22 @@
     <title>Fashion page - nike</title>
 
     <link rel="stylesheet" href="fashion-brand.css" />
+    <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- hgroup font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- paragraph font -->
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet" />
+    <!-- nike brand font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <script defer src="show-hide-pages.js"></script>
     <script>
       const NIKE = 'nike';
@@ -102,17 +105,15 @@
       <article class="fashion-main-article">
         <h1>Magazine</h1>
         <ul class="fashion-magazine">
-          <li class="fashion-magazine-list-1">
+          <li class="fashion-magazine-list-1" onclick="goDetailPage(NIKE, 1)">
             <section class="fashion-magazine-list-1-section">
               <article class="fashion-magazine-list-1-article">
                 <h2>
-                  지금 셀럽들은
+                  나이키, 사상 최초
                   <br />
-                  이 나이키 슈즈를
-                  <br />
-                  신는다
+                  난민 선수 후원
                 </h2>
-                <p>이제는 하나의 문화로 자리 잡은 스니커즈. 나이키는 스니커즈 트...</p>
+                <p>'어디서 왔는가'가 아닌, '어디로 향하는가'가 우리를 정의한다</p>
               </article>
               <div class="button-wrapper">
                 <button>
@@ -194,18 +195,19 @@
           </div>
         </div>
       </article>
-
-      <!-- <ul class="productList">
-        <li onclick="goDetailPage(TMB, 1)"><img src="images/tmb/tmb-1.jpg" alt="treemingbird product" /></li>
-        <li onclick="goDetailPage(TMB, 2)"><img src="images/tmb/tmb-2.jpg" alt="treemingbird product" /></li>
-        <li onclick="goDetailPage(TMB, 3)"><img src="images/tmb/tmb-3.jpg" alt="treemingbird product" /></li>
-      </ul> -->
     </section>
 
-    <section class="detail-page">
-      <button onclick="goMainPage()"></button>
-      <img class="detail-image" />
-      <h1 class="detail-title"></h1>
+    <section class="detail-page-article nike-detail-page-1 hide">
+      <button id="go-main-button" onclick="goMainPage(NIKE, 1)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path
+            d="M32 15H3.41l8.29-8.29-1.41-1.42-10 10a1 1 0 0 0 0 1.41l10 10 1.41-1.41L3.41 17H32z"
+            data-name="4-Arrow Left"
+          />
+        </svg>
+      </button>
+      <div class="background-image-wrapper background-image-wrapper-nike"></div>
+      <iframe class="detail-page-iframe" src="brand-nike/fashion-brand-nike-magazine-1.html"></iframe>
     </section>
 
     <footer>
