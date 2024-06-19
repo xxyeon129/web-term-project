@@ -1,0 +1,35 @@
+.brand-name-glowny {
+  font-family: 'Open Sans', sans-serif;
+  font-variation-settings: 'wdth' 100;
+  letter-spacing: 0.5em;
+  font-weight: 800;
+}
+
+.glowny-detail-page-1 {
+  .background-image-wrapper-glowny {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(223, 223, 223, 0.5) 50%,
+        rgba(255, 255, 255, 1) 100%
+      ),
+      url(../images/glowny/glowny-magazine-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.glowny-detail-page-3 {
+  .background-image-wrapper-glowny {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(223, 223, 223, 0.5) 50%,
+        rgba(255, 255, 255, 1) 100%
+      ),
+      url(../images/glowny/glowny-magazine-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
