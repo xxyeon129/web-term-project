@@ -1,5 +1,5 @@
-@import url('brand-tmb/fashion-brand-tmb.css');
-@import url('brand-glowny/fashion-brand-glowny.css');
+@import url('../brand-tmb/fashion-brand-tmb.css');
+@import url('../brand-glowny/fashion-brand-glowny.css');
 
 .magazine-page {
   margin: 0 7rem;

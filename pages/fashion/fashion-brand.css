@@ -1,5 +1,5 @@
 @import url('../../css/style.css');
-@import url('./fashion-detail-page-button-background.css');
+@import url('common/fashion-detail-page-button-background.css');
 
 .hide {
   display: none;
