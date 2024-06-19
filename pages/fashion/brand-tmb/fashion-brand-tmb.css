@@ -17,3 +17,17 @@
     background-repeat: no-repeat;
   }
 }
+.tmb-detail-page-3 {
+  .background-image-wrapper-tmb {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(223, 223, 223, 0.5) 50%,
+        rgba(255, 255, 255, 1) 100%
+      ),
+      url(../images/tmb/tmb-magazine-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
