@@ -29,7 +29,8 @@
       color: rgb(85, 85, 85);
     }
     .paragraph,
-    blockquote {
+    blockquote,
+    .article-callout {
       margin: 3rem 0;
     }
     figure {
@@ -77,6 +78,7 @@
       height: 30rem;
       overflow: auto;
       border-radius: 10px;
+      margin-bottom: 2rem;
     }
 
     .bottom-aside {
@@ -145,4 +147,20 @@
     border-left: 2px solid white;
     transform: rotate(135deg);
   }
+}
+
+.article-callout {
+  padding: 1rem 3rem 1rem 2rem;
+  background-color: #f1f1ef;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.article-ul {
+  > li {
+    margin-bottom: 0.7rem;
+  }
+}
+.in-article-ul {
+  margin: 3rem 0;
 }
