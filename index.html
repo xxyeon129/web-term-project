@@ -16,10 +16,7 @@
       rel="stylesheet"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet" />
   </head>
   <body style="margin: 0px">
     <header>
@@ -51,10 +48,7 @@
               <div class="button-wrapper content-home-detail-router-button-wrapper">
                 <button onclick="routing(PATH.FASHION_TMB)">
                   <div class="detail-router-button-hover">TMB</div>
-                  <img
-                    src="pages/fashion/images/tmb/home-tmb-button.jpg"
-                    alt="treemingbird cloth"
-                  />
+                  <img src="pages/fashion/images/tmb/home-tmb-button.jpg" alt="treemingbird cloth" />
                 </button>
               </div>
             </li>
@@ -70,20 +64,16 @@
               <div class="button-wrapper content-home-detail-router-button-wrapper">
                 <button onclick="routing(PATH.FASHION_GLOWNY)">
                   <div class="detail-router-button-hover">GLOWNY</div>
-                  <img
-                    src="pages/fashion/images/glowny/home-glowny-button.jpg"
-                    alt="glowny pictorial"
-                  />
+                  <img src="pages/fashion/images/glowny/home-glowny-button.jpg" alt="glowny pictorial" />
                 </button>
               </div>
             </li>
           </ul>
-          <div class="button-wrapper">
+          <div class="button-wrapper" id="home-fashion-home-button">
+            <p class="hide fashion-home-button-text">취미 페이지</p>
             <button id="fashion-home-button" onclick="routing(PATH.FASHION_HOME)">
               <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
-                <polygon
-                  points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7"
-                />
+                <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
               </svg>
             </button>
           </div>
@@ -121,8 +111,7 @@
             <br />
             브랜드에서 컬렉션을 출시하면 각기 다른 매력을 구경하는 데서 즐거움을 찾습니다.
             <br />
-            세 가지 브랜드 말고도 여러 의류 브랜드를 즐겨 입지만, 가장 좋아하는 브랜드 세 가지를
-            소개합니다.
+            세 가지 브랜드 말고도 여러 의류 브랜드를 즐겨 입지만, 가장 좋아하는 브랜드 세 가지를 소개합니다.
           </p>
           <figure>
             <img src="pages/fashion/images/tmb/tmb-home-wishlist.png" />
@@ -133,25 +122,13 @@
           </figure>
         </article>
         <nav id="fashion-brand-nav">
-          <button
-            class="fashion-brand-button"
-            id="fashion-tmb-button"
-            onclick="routing(PATH.FASHION_TMB)"
-          >
+          <button class="fashion-brand-button" id="fashion-tmb-button" onclick="routing(PATH.FASHION_TMB)">
             <p class="fashion-brand-button-text">Treeming bird</p>
           </button>
-          <button
-            class="fashion-brand-button"
-            id="fashion-nike-button"
-            onclick="routing(PATH.FASHION_NIKE)"
-          >
+          <button class="fashion-brand-button" id="fashion-nike-button" onclick="routing(PATH.FASHION_NIKE)">
             <p class="fashion-brand-button-text">Nike</p>
           </button>
-          <button
-            class="fashion-brand-button"
-            id="fashion-glowny-button"
-            onclick="routing(PATH.FASHION_GLOWNY)"
-          >
+          <button class="fashion-brand-button" id="fashion-glowny-button" onclick="routing(PATH.FASHION_GLOWNY)">
             <p class="fashion-brand-button-text">Glowny</p>
           </button>
         </nav>
