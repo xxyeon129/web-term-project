@@ -21,20 +21,20 @@
   button {
     font-family: 'IBM Plex Sans KR', sans-serif;
   }
+}
 
-  .button-wrapper {
+.button-wrapper {
+  margin: 0 auto;
+  padding: 0 0.313rem;
+
+  > button {
     margin: 0 auto;
-    padding: 0 0.313rem;
-
-    > button {
-      margin: 0 auto;
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -247,14 +247,24 @@
     }
   }
   .fashion-magazine-list-2-tmb {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.5) 35%, rgba(204, 204, 204, 0.6) 100%),
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(36, 36, 36, 0.5) 35%,
+        rgba(204, 204, 204, 0.6) 100%
+      ),
       url(images/tmb/tmb-magazine-2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
   .fashion-magazine-list-2-glowny {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.5) 35%, rgba(204, 204, 204, 0.6) 100%),
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(36, 36, 36, 0.5) 35%,
+        rgba(204, 204, 204, 0.6) 100%
+      ),
       url(images/glowny/glowny-magazine-2.jpg);
     background-size: cover;
     background-position: center;
@@ -421,4 +431,33 @@ footer {
       font-family: 'IBM Plex Sans KR', sans-serif;
     }
   }
+}
+
+/* for low web browser version */
+.paragraph {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  line-height: 160%;
+}
+.fashion-brand-h2 {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  line-height: 125%;
+}
+.fashion-magazine-list-1-button {
+  background-color: black;
+  color: white;
+
+  > svg {
+    fill: white;
+  }
+}
+.fashion-magazine-list-3-button {
+  background-color: white;
+}
+.fashion-brand-a {
+  margin-top: 3rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  width: 100%;
 }

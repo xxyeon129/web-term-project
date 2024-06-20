@@ -32,14 +32,14 @@
     }
   }
 
-  > nav {
+  nav {
     display: flex;
     width: 45%;
 
-    > button {
+    button {
       width: calc(100% / 3);
-      border: 1px solid;
-      writing-mode: vertical-rl;
+
+      /* writing-mode: vertical-rl; */
       transform: scale(-1);
       font-size: 3rem;
       font-weight: 800;
@@ -47,7 +47,7 @@
       padding-top: 4rem;
       color: white;
       border: none;
-      border-right: 3px solid white;
+      border-right: 3px solid red;
 
       &:hover {
         transition: 0.5s;
@@ -55,8 +55,14 @@
         width: calc(100% / 2);
       }
     }
+
     #fashion-tmb-button {
-      background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.5) 35%, rgba(204, 204, 204, 0.6) 100%),
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(36, 36, 36, 0.5) 35%,
+          rgba(204, 204, 204, 0.6) 100%
+        ),
         url(images/tmb/tmb-home-button.jpg);
       background-size: cover;
       background-position: center;
@@ -67,18 +73,103 @@
       background-color: rgb(73, 73, 73);
     }
     #fashion-nike-button {
-      background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.5) 35%, rgba(204, 204, 204, 0.6) 100%),
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(36, 36, 36, 0.5) 35%,
+          rgba(204, 204, 204, 0.6) 100%
+        ),
         url(images/nike/home-nike-button.png);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
     #fashion-glowny-button {
-      background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 36, 36, 0.5) 35%, rgba(204, 204, 204, 0.6) 100%),
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(36, 36, 36, 0.5) 35%,
+          rgba(204, 204, 204, 0.6) 100%
+        ),
         url(images/glowny/glowny-home-button.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
     }
   }
+}
+
+#fashion-brand-nav {
+  display: flex;
+  width: 45%;
+
+  .fashion-brand-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3);
+    transform: scale(-1);
+    font-size: 3rem;
+    font-weight: 800;
+
+    padding-top: 4rem;
+    color: white;
+    border: none;
+    border-right: 3px solid white;
+
+    &:hover {
+      transition: 0.5s;
+      font-size: 3.5rem;
+      width: calc(100% / 2);
+    }
+
+    .fashion-brand-button-text {
+      writing-mode: vertical-rl;
+
+      margin-top: auto;
+      margin-bottom: 1rem;
+    }
+  }
+
+  #fashion-tmb-button {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(36, 36, 36, 0.5) 35%,
+        rgba(204, 204, 204, 0.6) 100%
+      ),
+      url(images/tmb/tmb-home-button.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+  }
+  #fashion-nike-button {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(36, 36, 36, 0.5) 35%,
+        rgba(204, 204, 204, 0.6) 100%
+      ),
+      url(images/nike/home-nike-button.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #fashion-glowny-button {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(36, 36, 36, 0.5) 35%,
+        rgba(204, 204, 204, 0.6) 100%
+      ),
+      url(images/glowny/glowny-home-button.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.paragraph {
+  font-family: 'IBM Plex Sans KR', sans-serif;
 }

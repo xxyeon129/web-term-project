@@ -1,6 +1,6 @@
 @import url('../../css/style.css');
 
-p {
+.paragraph {
   font-family: 'IBM Plex Sans KR', sans-serif;
   line-height: 160%;
 }
@@ -87,54 +87,57 @@ p {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10rem;
+}
 
-  header {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
-    margin-bottom: 3rem;
+.about-me-page-bottom-tech {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
 
-    .dot {
-      width: 1.3rem;
-      height: 1.3rem;
-      background-color: black;
-    }
+.about-me-page-bottom-contact {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  margin-top: -2rem;
+}
 
-    h1 {
-      font-size: 3rem;
-    }
+.about-me-bottom-header {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  margin-bottom: 3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-me-page-bottom-hobby {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  .bottom-p {
+    margin-top: 3rem;
   }
+}
 
-  .about-me-page-bottom-hobby {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+.about-me-table {
+  width: 100%;
+  table-layout: fixed;
+}
 
-    .bottom-p {
-      margin-top: 3rem;
-    }
-  }
+.about-me-td {
+  height: 5rem;
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
 
-  .about-me-page-bottom-tech {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
+.dot {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: black;
+}
 
-    table {
-      width: 100%;
-      table-layout: fixed;
-    }
-    td {
-      height: 5rem;
-      display: table-cell;
-      vertical-align: top;
-      text-align: center;
-    }
-  }
-
-  .about-me-page-bottom-contact {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    margin-top: -2rem;
-  }
+.about-me-h1 {
+  font-size: 3rem;
 }
 
 footer {
@@ -150,6 +153,7 @@ footer {
 
   > h1 {
     font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
   }
 
   #footer-text {
