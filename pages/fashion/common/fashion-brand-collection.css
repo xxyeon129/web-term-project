@@ -30,7 +30,7 @@
   display: flex;
   gap: 3rem;
 
-  img {
+  > img {
     object-fit: cover;
   }
 }
@@ -38,20 +38,6 @@
 .collection-article-1 {
   height: 70vh;
   position: relative;
-
-  .collection-article-1-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    p {
-      margin-bottom: 10rem;
-    }
-
-    img {
-      width: 100%;
-      height: 50%;
-    }
-  }
 
   > img {
     width: 170rem;
@@ -152,20 +138,6 @@
       }
     }
   }
-
-  .collection-article-3-row-1 {
-    img {
-      width: 35rem;
-      height: 50rem;
-    }
-  }
-
-  .collection-article-3-row-2 {
-    img {
-      width: 35rem;
-      height: 30rem;
-    }
-  }
 }
 
 .collection-article-4 {
@@ -190,9 +162,6 @@
   text-align: justify;
   font-weight: 600;
 }
-.collection-figure {
-  margin: 0;
-}
 .collection-h1 {
   margin: 0;
   font-size: 4rem;
@@ -202,4 +171,39 @@
   margin: 0;
   line-height: 170%;
   text-align: justify;
+}
+
+/* for low version browser */
+.collection-article-1-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  > p {
+    margin-bottom: 10rem;
+  }
+}
+.collection-figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  > img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+}
+.collection-article-1-col-2-img {
+  width: 170rem;
+  height: 100%;
+}
+.collection-article-3-row-1 {
+  width: 100%;
+  display: flex;
+  column-gap: 3rem;
+  > figure {
+    margin: 0;
+  }
+}
+.collection-article-3-img {
+  width: 35rem;
 }
