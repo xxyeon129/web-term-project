@@ -63,3 +63,24 @@
     background-repeat: no-repeat;
   }
 }
+
+.collection-page-nike {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 1rem;
+
+  .collection-header-nike {
+    column-gap: 5rem;
+    > h1 {
+      margin-top: -0.5rem;
+      font-size: 6rem;
+    }
+  }
+
+  .collection-paragraph-nike {
+    line-height: 170%;
+  }
+}
+
+.collection-page-nike::-webkit-scrollbar {
+  display: none;
+}
