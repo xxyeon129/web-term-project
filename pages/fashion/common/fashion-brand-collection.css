@@ -90,6 +90,7 @@
     > img {
       width: 60%;
       height: 50rem;
+      object-fit: cover;
     }
 
     > article {
@@ -117,6 +118,7 @@
       > img {
         width: 40%;
         height: 20rem;
+        object-fit: cover;
       }
     }
   }
