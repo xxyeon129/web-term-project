@@ -139,7 +139,8 @@
     z-index: 3;
     display: block;
   }
-  svg {
+
+  .arrow-icon {
     width: 100px;
     height: 100px;
     transition: 0.5s;
