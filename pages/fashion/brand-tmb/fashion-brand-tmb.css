@@ -1,3 +1,22 @@
+.slider-tmb {
+  background-image: url(../images/tmb/tmb-background1.png);
+  animation: fade-tmb 8.5s infinite;
+}
+@keyframes fade-tmb {
+  0% {
+    background-image: url(../images/tmb/tmb-background1.png);
+  }
+  33.33% {
+    background-image: url(../images/tmb/tmb-background2.png);
+  }
+  66.66% {
+    background-image: url(../images/tmb/tmb-background3.png);
+  }
+  100% {
+    background-image: url(../images/tmb/tmb-background1.png);
+  }
+}
+
 .brand-name-tmb {
   font-family: 'Baskervville', serif;
   letter-spacing: 1em;

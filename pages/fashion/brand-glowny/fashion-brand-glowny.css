@@ -1,3 +1,23 @@
+.slider-glowny {
+  background-image: url(../images/glowny/glowny-background1.jpg);
+  animation: fade-glowny 8.5s infinite;
+}
+
+@keyframes fade-glowny {
+  0% {
+    background-image: url(../images/glowny/glowny-background1.jpg);
+  }
+  33.33% {
+    background-image: url(../images/glowny/glowny-background2.jpg);
+  }
+  66.66% {
+    background-image: url(../images/glowny/glowny-background3.jpg);
+  }
+  100% {
+    background-image: url(../images/glowny/glowny-background1.jpg);
+  }
+}
+
 .brand-name-glowny {
   font-family: 'Open Sans', sans-serif;
   font-variation-settings: 'wdth' 100;
