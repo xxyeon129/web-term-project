@@ -17,6 +17,20 @@
   }
 }
 
+.fashion-magazine-list-2-tmb {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(36, 36, 36, 0.5) 35%,
+      rgba(204, 204, 204, 0.6) 100%
+    ),
+    url(images/tmb/tmb-magazine-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* magazine deatil page */
 .brand-name-tmb {
   font-family: 'Baskervville', serif;
   letter-spacing: 1em;
